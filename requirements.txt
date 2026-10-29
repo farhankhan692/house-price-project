@@ -1,0 +1,2 @@
+# Core web application dependencies for Streamlit Cloud deployment
+streamlit>=1.30.0
