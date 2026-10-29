@@ -21,7 +21,7 @@ from src.visualizer import (
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Linear Algebra Mini-Project: House Price Least-Squares Comparison System"
+        description="Linear Algebra Software Platform: House Price Least-Squares Comparison System"
     )
     parser.add_argument(
         "--data",
@@ -38,8 +38,8 @@ def main():
     args = parser.parse_args()
 
     print("=" * 80)
-    print("  LINEAR ALGEBRA & VECTOR CALCULUS MINI-PROJECT")
-    print("  Topic 49: House Price Least-Squares Model Comparison System")
+    print("  HOUSE PRICE LEAST-SQUARES MODEL COMPARISON SYSTEM")
+    print("  Linear Algebra & Vector Calculus Software Platform")
     print("=" * 80)
     print(f"Dataset path: {args.data}\n")
 
@@ -49,7 +49,7 @@ def main():
 
     pipeline = HousePriceLeastSquaresPipeline(args.data)
 
-    print("Executing 8-Stage Sequential Mathematical Process:")
+    print("SECTION 1: SEQUENTIAL COMPUTATIONAL PROCESS EXECUTION")
     print("-" * 80)
 
     # Stage 1
@@ -104,7 +104,7 @@ def main():
     evaluations = pipeline.stage_8_model_comparison(residuals, y)
 
     print("\n" + "=" * 80)
-    print("FINAL MODEL COMPARISON RESULTS:")
+    print("SECTION 2: FINAL MODEL COMPARISON & ERROR NORMS")
     print("=" * 80)
     print(format_cli_comparison_table(evaluations))
     print("\nRanking Summary:")
